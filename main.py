@@ -72,3 +72,4 @@ print(X.shape)
 
 
 mlp_driver.run(X, y)
+knn_driver.run(X, y)
