@@ -7,6 +7,8 @@ from collections import Counter
 from imblearn.pipeline import Pipeline
 
 from mlp import mlp_driver
+from knn import knn_driver
+from dt import dt_driver
 from utils.metrics import precision_recall_score
 
 
@@ -72,3 +74,5 @@ print(X.shape)
 
 
 mlp_driver.run(X, y)
+knn_driver.run(X, y)
+dt_driver.run(X, y)
